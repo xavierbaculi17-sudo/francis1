@@ -1,5 +1,6 @@
-package model;
+package com.yourdomain.model;
 
-/** Immutable user record mapped to the "users" table. */
-public record User(int id, String username, String roles, String status) {
+/** Row of the users table (Java Record). */
+public record User(int id, String username, String fullName, String contactNo,
+                   String email, String roles, String status) {
 }
